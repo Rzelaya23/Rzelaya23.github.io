@@ -1,0 +1,347 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
+	line-height: 1.6;
+}
+
+header {
+	background-color: #323a45;
+	color: #fff;
+	padding: 10px 0;
+}
+
+.envoltorio {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.logo img {
+	float: left;
+}
+
+nav {
+	position: relative;
+	width: 100%;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+	margin-left: auto;
+	justify-content: flex-end;
+}
+
+nav ul li {
+	position: relative;
+}
+
+nav ul li a {
+	color: white;
+	text-decoration: none;
+	padding: 10px 15px;
+	display: block;
+}
+
+nav ul li ul {
+	display: none;
+	position: absolute;
+	top: 40px;
+	left: 0;
+	background-color: #0056b3;
+	border-radius: 4px;
+}
+
+nav ul li ul li {
+	width: 200px;
+}
+
+nav ul li:hover ul {
+	display: block;
+}
+
+nav ul li ul li a {
+	padding: 10px;
+}
+
+nav ul li a:hover {
+	background-color: #0056b3;
+	transition: background-color 0.3s;
+}
+
+.contenedor-slider img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+.intro {
+	background-color: #12488c;
+	color: #fff;
+	padding: 50px 0;
+	text-align: center;
+}
+
+.intro h1 {
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+
+.intro p {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.intro .boton {
+	background-color: #00315e;
+	color: white;
+	padding: 10px 20px;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+.intro .boton:hover {
+	background-color: #0056b3;
+}
+
+.servicios {
+	background-color: #fff;
+	padding: 50px 0;
+}
+
+.grid {
+	width: 100%;
+	float: none;
+	margin: 10px 0;
+	text-align: center;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	background-color: #fff;
+}
+
+.grid img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+}
+
+.grid h3 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.grid p {
+	font-size: 16px;
+	color: #333;
+	margin-bottom: 10px;
+}
+
+.grid .botoncito {
+	background-color: rgba(18,72,140,255);
+	color: #fff;
+	padding: 10px 20px;
+	text-decoration: none;
+	border-radius: 5px;
+	display: inline-block;
+}
+
+.grid .botoncito:hover {
+	background-color: #0056b3;
+}
+
+.testimonios {
+	background-color: #edeae6;
+	padding: 50px 0;
+	text-align: center;
+}
+
+.testimonios h3 {
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+.testimonios p {
+	font-size: 18px;
+	margin-bottom: 10px;
+	color: #333;
+}
+
+footer {
+	background-color: #323a45;
+	color: white;
+	text-align: center;
+	padding: 20px 0;
+	margin-top: 30px;
+}
+
+footer p {
+	font-size: 14px;
+}
+
+.envoltorio::after, .grid::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+h1 {
+	text-decoration: none;
+}
+
+.envoltorio h1 a {
+	text-decoration: none;
+	color: white;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 20px 0;
+	border: 2px solid #ccc;
+}
+
+th, td {
+	padding: 10px;
+	text-align: left;
+	border: 1px solid black;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: #ccc;
+	color: black;
+}
+
+tbody tr:nth-child(even) {
+	background-color: #fff;
+	color: black;
+}
+
+thead tr {
+	background-color: black;
+	color: white;
+}
+
+thead th {
+	padding: 10px;
+}
+
+.botontabla {
+	background-color: seagreen;
+	text-decoration: none;
+	color: white;
+	border-radius: 20px;
+	padding: 6px;
+	text-align: center;
+}
+
+/* Estilo del formulario */
+.ofertas {
+	background: white;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	margin: 20px auto;
+	max-width: 600px;
+}
+
+.h2formulario {
+	text-align: center;
+	color: #333;
+}
+
+label {
+	display: block;
+	margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="date"],
+select {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+input[type="submit"] {
+	background-color: #28a745;
+	color: white;
+	padding: 10px 15px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 16px;
+	margin-top: 10px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+input[type="submit"]:hover {
+	background-color: #218838;
+}
+
+/* Video */
+video {
+	max-width: 100%;
+	height: auto;
+	border: 2px solid #333;
+	border-radius: 8px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* telefonos */
+@media (max-width: 480px) {
+	.envoltorio {
+		width: 100%;
+		padding: 10px;
+	}
+
+	nav ul {
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.contenedor-slider img {
+		height: auto;
+	}
+
+	.grid {
+		width: 100%;
+		margin: 10px 0;
+	}
+}
+
+/* tablets*/
+@media (max-width: 768px) {
+	.envoltorio {
+		width: 90%;
+	}
+
+	.grid {
+		width: 45%;
+		margin: 2.5%;
+	}
+
+	.intro h1 {
+		font-size: 28px;
+	}
+
+	.intro p {
+		font-size: 16px;
+	}
+}
